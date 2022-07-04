@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+sessionStorage.setItem("age", 27)
+document.getElementById("demo").innerHTML = sessionStorage.getItem("age");
+
+localStorage.setItem("name","Satheesh");
+document.getElementById("demo").innerHTML = localStorage.getItem("name");
+
+</script>
+
+</body>
+</html>
+
+<!--
+
+// Tab 1
+
+sessionStorage.setItem("job", "Sotware Developer")
+undefined
+sessionStorage.getItem("job")
+'Sotware Developer'
+localStorage.setItem("native", "Pondicherry")
+undefined
+localStorage.getItem("native")
+'Pondicherry'
+-->
+
+<!--
+
+// Tab 2
+    
+sessionStorage.getItem("job")
+null
+localStorage.getItem("native")
+'Pondicherry'
+
+-->
+
+<!--
+
+// Example
+
+localStorage.getItem("native")
+null
+sessionStorage.removeItem("job")
+undefined
+sessionStorage.getItem("job")
+null
+localStorage.clear()
+undefined
+localStorage.getItem("name")
+null
+-->
